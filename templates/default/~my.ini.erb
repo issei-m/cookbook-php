@@ -1,10 +1,18 @@
+display_errors = <%= node['php']['config']['display_errors'] %>
+
 date.timezone = "<%= node['php']['config']['date']['timezone'] %>"
 
 default_charset = "<%= node['php']['config']['default_charset'] %>"
 expose_php = "<%= node['php']['config']['expose_php'] %>"
 
 realpath_cache_size = "<%= node['php']['config']['realpath_cache_size'] %>"
-realpath_cache_ttl = "<%= node['php']['config']['realpath_cache_ttl'] %>"
+realpath_cache_ttl = <%= node['php']['config']['realpath_cache_ttl'] %>
 
 mbstring.language = "<%= node['php']['config']['mbstring']['language'] %>"
 mbstring.internal_encoding = "<%= node['php']['config']['mbstring']['internal_encoding'] %>"
+
+opcache.memory_consumption = <%= node['php']['config']['opcache']['memory_consumption'] %>
+opcache.interned_strings_buffer = <%= node['php']['config']['opcache']['interned_strings_buffer'] %>
+opcache.max_accelerated_files = <%= node['php']['config']['opcache']['max_accelerated_files'] %>
+opcache.revalidate_freq = <%= node['php']['config']['opcache']['revalidate_freq'] %>
+opcache.fast_shutdown = <%= node['php']['config']['opcache']['fast_shutdown'] %>
