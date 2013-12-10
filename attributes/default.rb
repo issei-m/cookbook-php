@@ -29,3 +29,13 @@ default['php']['config']['opcache'] = {
   :revalidate_freq => '2',
   :fast_shutdown => 'On'
 }
+
+default['php']['config']['xdebug'] = {
+  :remote_enable => 'On',
+  :remote_host => 'localhost',
+  :remote_port => '9000',
+  :profiler_enable => 'On',
+  :profiler_output_dir => '/tmp',
+  :max_nesting_level => '1000',
+  :idekey => 'PHPSTORM'
+}
