@@ -14,6 +14,8 @@ default['php']['config']['date']['timezone'] = 'Asia/Tokyo'
 default['php']['config']['default_charset'] = 'UTF-8'
 default['php']['config']['expose_php'] = 'Off'
 
+default['php']['config']['memory_limit'] = '128M'
+
 default['php']['config']['realpath_cache_size'] = '4096K'
 default['php']['config']['realpath_cache_ttl'] = '7200'
 
