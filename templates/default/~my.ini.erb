@@ -13,10 +13,13 @@ realpath_cache_ttl = <%= node['php']['config']['realpath_cache_ttl'] %>
 mbstring.language = "<%= node['php']['config']['mbstring']['language'] %>"
 mbstring.internal_encoding = "<%= node['php']['config']['mbstring']['internal_encoding'] %>"
 
+opcache.enable_cli = <%= node['php']['config']['opcache']['enable_cli'] %>
 opcache.memory_consumption = <%= node['php']['config']['opcache']['memory_consumption'] %>
 opcache.interned_strings_buffer = <%= node['php']['config']['opcache']['interned_strings_buffer'] %>
 opcache.max_accelerated_files = <%= node['php']['config']['opcache']['max_accelerated_files'] %>
+opcache.validate_timestamps = <%= node['php']['config']['opcache']['validate_timestamps'] %>
 opcache.revalidate_freq = <%= node['php']['config']['opcache']['revalidate_freq'] %>
+opcache.enable_file_override = <%= node['php']['config']['opcache']['enable_file_override'] %>
 opcache.fast_shutdown = <%= node['php']['config']['opcache']['fast_shutdown'] %>
 
 xdebug.remote_enable = <%= node['php']['config']['xdebug']['remote_enable'] %>

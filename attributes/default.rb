@@ -25,10 +25,13 @@ default['php']['config']['mbstring'] = {
 }
 
 default['php']['config']['opcache'] = {
+  :enable_cli => 'Off',
   :memory_consumption => '128',
   :interned_strings_buffer => '8',
   :max_accelerated_files => '4000',
+  :validate_timestamps => 'On',
   :revalidate_freq => '2',
+  :enable_file_override => 'Off',
   :fast_shutdown => 'On'
 }
 
